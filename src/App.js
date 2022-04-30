@@ -46,7 +46,7 @@ function App() {
   const tempConvert = (temp) => {
     return (temp - 273.15).toFixed(2);
   };
-  tempConvert(temperature);
+
   getData();
   const h = kota.toUpperCase();
   return (
@@ -55,7 +55,7 @@ function App() {
       <Current
         cuaca={cuaca}
         pressure={pressure}
-        temp={tempConvert}
+        temp={`${tempConvert(temperature)}°C`}
         humidity={humidity}
         visibility={visibility / 10}
         icon={`http://openweathermap.org/img/wn/${icon}@2x.png`}

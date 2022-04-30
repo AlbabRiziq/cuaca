@@ -5,7 +5,7 @@ const Current = (props) => {
     <div className="w-screen">
       <div className="pt-32 h-full flex flex-col items-center justify-center">
         <img className="h-40" src={props.icon} alt="Dummy" />
-        <p className="mt-5 text-3xl font-semibold">30°C</p>
+        <p className="mt-5 text-3xl font-semibold">{props.temp}</p>
         <p className="mt-5 text-3xl font-semibold">{props.cuaca}</p>
       </div>
 
